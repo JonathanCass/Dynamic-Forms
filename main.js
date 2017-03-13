@@ -1,8 +1,7 @@
 $(document).ready(function(){
 	$.getJSON('http://json-data.herokuapp.com/forms', function(formData){
 		var formHTML = ""
-
-		
+		var icon = ""
 
 		formData.forEach(function(field){
 			if (field.type == "select"){
@@ -16,7 +15,9 @@ $(document).ready(function(){
 				formHTML += selectArr
 				}
 			else{
-				formHTML += `<input type="${field.type}" placeholder=" ${field.label}" id="${field.id}" />`	
+				icon = `<i class="fa ${field.icon}" aria-hidden="true"></i>`
+				console.log(icon)
+				formHTML += `<input type="${field.type}" placeholder="${field.label}" id="${field.id}" />`	
 			}
 		})
 		
@@ -25,12 +26,4 @@ $(document).ready(function(){
 })
 
 //<i class="fa ${field.icon}" aria-hidden="true"></i>
-//<i class="fa ${field.icon}" aria-hidden="true"></i>
-//[add(option[,index])]	Adds an <option> element into the collection at the specified index. If no index is specified, it inserts the option at the end of the collection
-/*
-<select>
-  <option value="volvo">Volvo</option>
-  <option value="saab">Saab</option>
-  <option value="mercedes">Mercedes</option>
-  <option value="audi">Audi</option>
-</select>*/
+//
