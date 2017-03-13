@@ -7,15 +7,38 @@ html {
 form{
 	height : 510px;
 	width : 535px;
-	padding: 25px;
 }
 input, select{
 	height: 35px;
 	width: 480px;
-	margin:10px;
+	margin: 10px 28px;
 	background-color: white;
 }
 input[type="textarea"]{
 	height: 75px;
 	width: 480px;
+}
+#header, #footer{
+	width: 535px;
+	height: 75px;
+}
+#header{
+	background-color: #2886CF;
+	margin-bottom: 20px;
+}
+#container{
+	float:left;
+	border: solid grey 2px;
+	margin: 100px;
+}
+#footer{
+	background-color: #C4DDF2;
+}
+h2{
+	color: white;
+	padding: 0;
+	margin: 0;
+	font-weight: lighter;
+	text-align: center;
+	line-height: 75px;
 }
