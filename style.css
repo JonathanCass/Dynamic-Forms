@@ -4,3 +4,17 @@ html {
 *, *:before, *:after {
 	box-sizing: inherit;
 }
+form{
+	height : 510px;
+	width : 535px;
+	padding: 25px;
+}
+input{
+	height: 35px;
+	width: 480px;
+	margin:10px;
+}
+input[type="textarea"]{
+	height: 75px;
+	width: 480px;
+}

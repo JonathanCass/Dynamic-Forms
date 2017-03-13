@@ -3,8 +3,11 @@ $(document).ready(function(){
 		var formHTML = ""
 
 		formData.forEach(function(field){
-		formHTML += `<i class="fa ${field icon}/><input type="${field.type}" placeholder="${field.label}"" id="${field.id}"" />``
+		formHTML += `<input type="${field.type}" placeholder=" ${field.label}" id="${field.id}" />`
 		})
 
+		$("form").html(formHTML)
 	})
 })
+
+//<i class="fa ${field.icon}" aria-hidden="true"></i>
