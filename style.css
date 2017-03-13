@@ -9,10 +9,11 @@ form{
 	width : 535px;
 	padding: 25px;
 }
-input{
+input, select{
 	height: 35px;
 	width: 480px;
 	margin:10px;
+	background-color: white;
 }
 input[type="textarea"]{
 	height: 75px;
