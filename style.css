@@ -58,5 +58,7 @@ button{
 i{
 	position: relative;
 	left:-470px;
+	top: 2px;
 	color: grey;
+	font-size: 36px;
 }
