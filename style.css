@@ -6,20 +6,23 @@ html {
 }
 form{
 	height : 510px;
-	width : 535px;
+	width : 540px;
 }
 input, select{
 	height: 35px;
 	width: 480px;
 	margin: 10px 28px;
 	background-color: white;
+	font-size: 12px;
+	padding: 10px 30px;
+	margin-right: 0px;
 }
 input[type="textarea"]{
 	height: 75px;
 	width: 480px;
 }
 #header, #footer{
-	width: 535px;
+	width: 540px;
 	height: 75px;
 }
 #header{
@@ -51,4 +54,9 @@ button{
 	width:100px;
 	border-radius: 3px;
 	border-color: transparent;
+}
+i{
+	position: relative;
+	left:-470px;
+	color: grey;
 }
