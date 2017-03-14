@@ -1,7 +1,6 @@
 $(document).ready(function(){
 	$.getJSON('http://json-data.herokuapp.com/forms', function(formData){
 		var formHTML = ""
-		var icon = ""
 
 		formData.forEach(function(field){
 			if (field.type == "select"){
@@ -15,15 +14,9 @@ $(document).ready(function(){
 				formHTML += selectArr
 				}
 			else{
-				icon = `<i class="fa ${field.icon}" aria-hidden="true"></i>`
-				console.log(icon)
 				formHTML += `<input type="${field.type}" placeholder="${field.label}" id="${field.id}" /><i class="fa ${field.icon}" aria-hidden="true"></i>`
 			}
 		})
-		
 		$("form").html(formHTML)
 	})
 })
-
-//<i class="fa ${field.icon}" aria-hidden="true"></i>
-//
