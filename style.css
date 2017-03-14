@@ -17,9 +17,10 @@ input, select{
 	padding: 10px 30px;
 	margin-right: 0px;
 }
-input[type="textarea"]{
+textarea{
 	height: 75px;
 	width: 480px;
+	margin-left: 10px;
 }
 #header, #footer{
 	width: 540px;
@@ -61,4 +62,8 @@ i{
 	top: 2px;
 	color: grey;
 	font-size: 36px;
+}
+.taDiv{
+	width: 500px;
+	margin-top: 10px;
 }
