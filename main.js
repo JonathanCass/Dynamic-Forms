@@ -13,8 +13,8 @@ $(document).ready(function(){
 				selectArr += ('</select>')
 				formHTML += selectArr
 				}
-			if (field.type == "textarea"){
-				formHTML += `<div class="taDiv"><textarea placeholder="${field.label}" id="${field.id}" ></textarea></div><i class="fa ${field.icon}" aria-hidden="true"></i>`
+			else if (field.type == "textarea"){
+				formHTML += `<div class="taDiv"><i class="fa ${field.icon}" aria-hidden="true"></i><textarea placeholder="${field.label}" id="${field.id}" ></textarea></div>`
 			}
 			else{
 				formHTML += `<input type="${field.type}" placeholder="${field.label}" id="${field.id}" /><i class="fa ${field.icon}" aria-hidden="true"></i>`

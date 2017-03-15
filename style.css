@@ -20,7 +20,11 @@ input, select{
 textarea{
 	height: 75px;
 	width: 480px;
-	margin-left: 10px;
+	margin-left: 28px;
+	resize: none;
+	padding-top: 10px;
+	padding-left: 30px;
+	font-size: 12px;
 }
 #header, #footer{
 	width: 540px;
@@ -64,6 +68,14 @@ i{
 	font-size: 36px;
 }
 .taDiv{
-	width: 500px;
-	margin-top: 10px;
+	width: 480px;
+	padding: 0px;
+}
+.taDiv i{
+	position:relative;
+	z-index: 10;
+	color: grey;
+	top: 26px;
+	left: 6px;
+	margin-left: 30px;
 }
